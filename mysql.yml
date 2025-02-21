@@ -39,3 +39,5 @@
   - name: set up the password
     ansible.builtin.command: "mysql_secure_installation --set-root-pass {{mysql_password}}"
     when: mysql_info.failed is true
+
+  
