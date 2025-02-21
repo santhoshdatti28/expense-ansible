@@ -36,5 +36,5 @@
 
   - name: coping backend.service file
     ansible.builtin.copy:
-      path: backend.service
+      src: backend.service
       dest: /etc/systemd/system/backend.service
