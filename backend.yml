@@ -33,3 +33,8 @@
     community.general.npm: 
       path: /app
       state: present
+
+  - name: coping backend.service file
+    ansible.builtin.copy:
+      path: backend.service
+      dest: /etc/systemd/system/backend.service
