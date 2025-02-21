@@ -11,7 +11,7 @@
       name: nodejs
       state: present
   - name: install my-sql server
-      name: mysql-server
+      name: mysql
       state: present 
   - name: creating expense user
     ansible.builtin.user:
