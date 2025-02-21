@@ -59,4 +59,9 @@
       login_host: mysql.santhoshdatti.online
       target: /app/schema/backend.sql
 
-
+  - name: daemon relood
+    ansible.builtin.systemd_service:
+      enabled: true
+      state: restarted
+      daemon_reload: true
+      name: backend
