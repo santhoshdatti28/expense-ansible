@@ -26,9 +26,10 @@
       remote_src: true
 
   - name: copy exepnse.conf file
-    anible.builtin.copy:
+    ansible.builtin.copy:
       src: expense.conf
       dest: /etc/nginx/default.d/expense.conf
+
   - name: restart nginx
     ansible.builtin.service:
       name: nginx
